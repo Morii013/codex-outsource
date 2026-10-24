@@ -74,15 +74,9 @@ $env:CODEX_PROXY = "http://你的代理地址:端口"
 
 ## 三、安装
 
-### 3.1 准备 GitHub 访问
+### 3.1 获取仓库
 
-仓库是私有的，本机需要 GitHub 凭据：
-
-```powershell
-gh auth login
-```
-
-或用 Git Credential Manager 登录过一次。
+仓库公开，直接克隆即可。
 
 ### 3.2 一条命令安装
 
@@ -325,7 +319,7 @@ codex login status
 - 脚本会写 `~/.codex/config.toml` 的信任条目；只写当前项目目录。
 - 不写入任何 key、token、账号信息到仓库。
 - 删除类任务 Codex 会拒绝执行，改为移动或由 DSH 处理。
-- 仓库私有，安装机器需要 GitHub 权限。
+- 仓库公开，任何机器都可以直接克隆。
 
 ---
 
